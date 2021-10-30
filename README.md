@@ -190,3 +190,32 @@ write(*,*) "A=", nint(a) !Closer rounded number
 end program
 ```
 
+
+
+
+
+
+
+-c <File>: Compile the file
+
+-o <File>: Directs the output to the selected file
+
+-J <Folder>: Directs .mod to selected directory
+
+-I <Folder>: Search modules in directory
+-fPIC <Files>: Cria uma biblioteca
+-shared <File .so>: Cria uma biblioteca compartilhada a partir de um biblioteca existente
+-WL,-R -WL <Folder>: Aponta o diretorio que será conectado a biblioteca compartilhada
+-L <FIle>: Biblioteca está na pasta atual
+
+
+
+Program : Programa principal
+
+Module : Adicções ao programa principal
+
+
+
+Biblioteca Compartilhada
+
+Um programa principal pode chamar bibliotecas externas e usa-las apenas no momento de uso. Toda biblioteca começa com o prefixo lib e termina com .so
